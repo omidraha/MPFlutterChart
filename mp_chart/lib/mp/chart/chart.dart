@@ -32,7 +32,7 @@ abstract class ChartState<T extends Chart> extends State<T> {
 
   void updatePainter();
 
-  void capture() async {
+  /*void capture() async {
     if (isCapturing) return;
     isCapturing = true;
     String directory = "";
@@ -55,7 +55,7 @@ abstract class ChartState<T extends Chart> extends State<T> {
     }).catchError((error) {
       isCapturing = false;
     });
-  }
+  }*/
 
   @override
   void didUpdateWidget(T oldWidget) {
